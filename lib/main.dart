@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
       home: HomeScreen(),
     );
   }
+  
 }
 
 class HomeScreen extends StatelessWidget {
@@ -58,7 +59,7 @@ class HomeScreen extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            
+
           ],
         ),
       ),
