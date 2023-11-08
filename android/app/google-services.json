@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1012850020205",
+    "project_id": "it-tng",
+    "storage_bucket": "it-tng.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012850020205:android:262ae43e0ac5e15be55464",
+        "android_client_info": {
+          "package_name": "ru.ittng.it_tng"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdNAHhf8j3VpcCX9U0f0zUXFucH2AGX4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
