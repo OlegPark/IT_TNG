@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:it_tng/generated/l10n.dart';
+
+import 'features/auth/view/auth_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,10 +23,11 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       theme: ThemeData(
+        appBarTheme: AppBarTheme(backgroundColor: Color.fromARGB(3, 37, 65, 1)),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: AuthWidget(),
     );
   }
   
