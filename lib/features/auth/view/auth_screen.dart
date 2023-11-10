@@ -10,10 +10,17 @@ class AuthWidget extends StatefulWidget {
 class _AuthWidgetState extends State<AuthWidget> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Login to your account'),
-      ),
-    );
+    return MaterialApp(
+      home: Scaffold(
+        body: SafeArea(
+          child: Column(
+            children: [
+              Row(
+                children: [],
+              )
+            ],)
+            ),
+          ),
+      );
   }
 }
