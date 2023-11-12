@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:it_tng/UI/theme/theme.dart';
 
 class AuthWidget extends StatefulWidget {
   const AuthWidget({super.key});
@@ -12,16 +13,6 @@ class _AuthWidgetState extends State<AuthWidget> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: SafeArea(
-          child: Column(
-            children: [
-              Row(
-                children: [],
-              )
-            ],)
-            ),
-          ),
-      );
+      theme: darkTheme);
   }
 }
