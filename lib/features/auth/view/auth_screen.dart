@@ -6,27 +6,10 @@ class AuthWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Theme: darkTheme;
-    return SafeArea(
-      child: Scaffold(
-        body: Container(
-          margin: EdgeInsets.all(24),
-          child: Column(
-            children: [
-            _header(context),
-            ],
-          ),
-        ),
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(image: AssetImage("assets/images/1BG.png"))
       ),
-    );
-  }
-
-  _header(context){
-    return Column(
-      children: [
-        Text("Welcom Back"),
-        Text("Enter your credential to login"),
-      ],
     );
   }
 }
