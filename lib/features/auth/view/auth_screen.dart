@@ -59,7 +59,6 @@ class AuthWidget extends StatelessWidget {
 
   Widget _buildForm() {
     return Column(
-
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text("itTNG", style: TextStyle(
@@ -67,10 +66,24 @@ class AuthWidget extends StatelessWidget {
           ),
         ),
         Text("Система складского учёта для IT-отделов", style: TextStyle(
-          color: Colors.grey, fontSize: 18, fontWeight: FontWeight.w200
+          color: Colors.grey, fontSize: 16.7, fontWeight: FontWeight.w200
           ),
-        )
+        ),
+        _buildGreyText("Логин"),
+        const SizedBox(height: 60),
+        _buildGreyText("Пароль"),
       ],
     );
+  }
+
+  Widget _buildGreyText(String text) {
+    return Text(
+      text,
+      style: const TextStyle(color: Colors.black),
+    );
+  }
+  
+  Widget _buildInputField(TextEditingController controller, {isPassword = false}) {
+    return TextField();
   }
 }
