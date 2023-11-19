@@ -1,5 +1,3 @@
-// ignore_for_file: unused_element
-
 import 'package:flutter/material.dart';
 
 class AuthWidget extends StatelessWidget {
@@ -61,11 +59,11 @@ class AuthWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("itTNG", style: TextStyle(
+        const Text("itTNG", style: TextStyle(
           color: Colors.black, fontSize: 32, fontWeight: FontWeight.w600
           ),
         ),
-        Text("Система складского учёта для IT-отделов", style: TextStyle(
+        const Text("Система складского учёта для IT-отделов", style: TextStyle(
           color: Colors.grey, fontSize: 16.7, fontWeight: FontWeight.w200
           ),
         ),
