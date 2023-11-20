@@ -15,7 +15,7 @@ class AuthWidget extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Stack(children: [
-          Positioned(top: 80, child: _buildTop()),
+          Positioned(top: 35, child: _buildTop()),
           Positioned(bottom: 0, child: _buildBottom())
         ]),
       )
@@ -29,8 +29,8 @@ class AuthWidget extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(
-            Icons.assignment,
-            size: 100,
+            Icons.settings_applications_outlined,
+            size: 50,
             color: Colors.black,
           ),
         ],
