@@ -82,6 +82,10 @@ class AuthWidget extends StatelessWidget {
   }
   
   Widget _buildInputField(TextEditingController controller, {isPassword = false}) {
-    return TextField();
+    return TextField(
+      decoration: InputDecoration(
+        filled: true,
+      ),
+    );
   }
 }
