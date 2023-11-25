@@ -209,6 +209,23 @@ class service extends StatelessWidget {
                     ),
                   ],
                 ),
+                const SizedBox(height: 30),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    Text(
+                      'Sheddule',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text('Sept, 2023',
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),),
+                  ],
+                ),
               ],
             ),
           )),
