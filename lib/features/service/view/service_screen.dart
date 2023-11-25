@@ -21,11 +21,11 @@ class service extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {},
-                      child: Icon(Icons.arrow_back_ios),
+                      child: const Icon(Icons.arrow_back_ios),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.search,
+                      icon: const Icon(Icons.search,
                       size: 30,
                       ),
                     ),
@@ -65,9 +65,9 @@ class service extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                           ),
-                          Row(
+                          const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
+                            children: [
                               Icon(
                                 Icons.star_rounded,
                                 color: Colors.yellow,
@@ -147,9 +147,9 @@ class service extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                           ),
-                          Row(
+                          const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
+                            children: [
                               Icon(
                                 Icons.star_rounded,
                                 color: Colors.yellow,
@@ -210,9 +210,9 @@ class service extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 30),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     Text(
                       'Sheddule',
                       style: TextStyle(
