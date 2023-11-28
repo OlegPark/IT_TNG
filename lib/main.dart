@@ -24,7 +24,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         useMaterial3: true,
       ),
-      home: const AuthWidget(),
+      initialRoute: 'auth_screen',
+      routes: {
+        '/auth_screen': (context) => const AuthWidget(),
+      },
     );
   }
   
