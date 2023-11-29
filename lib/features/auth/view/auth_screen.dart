@@ -88,4 +88,20 @@ class AuthWidget extends StatelessWidget {
       ),
     );
   }
+  Widget _buildBotton(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(child: Center(child: Column(children: [
+        TextButton.icon(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.black),
+            foregroundColor: MaterialStateProperty.all(Colors.white),
+            ),
+          onPressed: () {
+            Navigator.pushNamed(context, '/home_screen');
+          },
+          icon: const Icon(Icons.settings),
+          label: const Text('Вход'),)
+      ]),)),
+    );
+  }
 }

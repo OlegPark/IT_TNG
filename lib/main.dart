@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:it_tng/generated/l10n.dart';
 import 'features/auth/auth.dart';
+import 'features/home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
       initialRoute: 'auth_screen',
       routes: {
         '/auth_screen': (context) => const AuthWidget(),
+        '/home_screen': (context) => const HomeWidget(),
       },
     );
   }
