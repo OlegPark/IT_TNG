@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class service extends StatelessWidget {
-  const service({Key? key}) : super(key: key);
+class ServiceWidget extends StatelessWidget {
+  const ServiceWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
