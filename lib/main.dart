@@ -1,5 +1,9 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:it_tng/features/service/view/service_screen.dart';
+import 'package:it_tng/features/story/story.dart';
 import 'package:it_tng/generated/l10n.dart';
 import 'features/auth/auth.dart';
 import 'features/home/home.dart';
@@ -29,6 +33,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/auth_screen': (context) => const AuthWidget(),
         '/home_screen': (context) => const HomeWidget(),
+        '/service_screen': (context) => const ServiceWidget(),
+        '/story_screen': (context) => const StoryWidget(),
       },
     );
   }
