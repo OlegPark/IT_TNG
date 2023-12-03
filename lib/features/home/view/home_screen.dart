@@ -24,10 +24,19 @@ class HomeWidget extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            color: Colors.white,
-            height: 400,
-            width: double.infinity,
+          Padding(
+            padding: const EdgeInsets.only(top: 200.0),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(40),
+                  topRight: Radius.circular(40),
+                ),
+                color: Colors.white,
+              ),
+              height: double.infinity,
+              width: double.infinity,
+            ),
           ),
         ],
       ),
