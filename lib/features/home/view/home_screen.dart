@@ -5,7 +5,7 @@ class HomeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
       body: Stack(
         children: [
           Container(
@@ -36,6 +36,23 @@ class HomeWidget extends StatelessWidget {
               ),
               height: double.infinity,
               width: double.infinity,
+              child:  Padding(
+                padding: const EdgeInsets.only(left: 28.0, right: 28.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    TextField(
+                      decoration: InputDecoration(
+                        label: Text('Логин', style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),),
+                      ),
+                    ),
+                    TextField(),
+                  ],
+                ),
+              ),
             ),
           ),
         ],
