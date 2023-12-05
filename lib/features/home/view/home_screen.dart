@@ -36,20 +36,56 @@ class HomeWidget extends StatelessWidget {
               ),
               height: double.infinity,
               width: double.infinity,
-              child:  Padding(
-                padding: const EdgeInsets.only(left: 28.0, right: 28.0),
+              child: Padding(
+                padding: EdgeInsets.only(left: 28.0, right: 28.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     TextField(
                       decoration: InputDecoration(
+                        suffixIcon: Icon(Icons.check, color: Colors.grey),
                         label: Text('Логин', style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.black,
                         ),),
                       ),
                     ),
-                    TextField(),
+                    TextField(
+                      decoration: InputDecoration(
+                        suffixIcon: Icon(Icons.visibility_off, color: Colors.grey),
+                        label: Text('Пароль', style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),),
+                      ),
+                    ),
+                    SizedBox(height: 10,),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: Text('Забыли пароль?', style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                      ),),
+                    ),
+                    SizedBox(height: 50,),
+                    Container(
+                      height: 60,
+                      width: 300,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color.fromARGB(193, 78, 7, 255), 
+                            Color.fromARGB(255, 0, 87, 201),
+                          ],
+                        ),
+                      ),
+                      child: Center(child: Text('Войти', style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),),),
+                    ),
                   ],
                 ),
               ),
