@@ -27,15 +27,24 @@ class HomeWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 200.0),
             child: Container(
+              margin: EdgeInsets.all(20),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40),
                   topRight: Radius.circular(40),
+                  bottomLeft: Radius.circular(40),
+                  bottomRight: Radius.circular(40),
                 ),
                 color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey,
+                    offset: Offset(5.0, 5.0),
+                  ),
+                ],
               ),
-              height: double.infinity,
-              width: double.infinity,
+              height: 450,
+              width: 350,
               child: Padding(
                 padding: EdgeInsets.only(left: 28.0, right: 28.0),
                 child: Column(
