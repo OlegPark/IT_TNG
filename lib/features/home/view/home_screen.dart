@@ -27,7 +27,7 @@ class HomeWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 200.0),
             child: Container(
-              margin: EdgeInsets.all(20),
+              margin: EdgeInsets.all(22),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40),
@@ -39,7 +39,9 @@ class HomeWidget extends StatelessWidget {
                 boxShadow: [
                   BoxShadow(
                     color: Colors.grey,
-                    offset: Offset(5.0, 5.0),
+                    offset: Offset(0.5, 0.5),
+                    blurRadius: 10.0,
+                    spreadRadius: 2.0,
                   ),
                 ],
               ),
