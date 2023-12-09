@@ -71,7 +71,13 @@ class AuthScreen extends StatelessWidget {
                       ],
                     ),
                     Text(
-                      'Система складского учёта для IT-отделов',
+                      'Система складского учёта для',
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Text(
+                      'IT-отделов',
                       style: TextStyle(
                         color: Colors.grey,
                       ),
