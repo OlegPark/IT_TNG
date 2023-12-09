@@ -52,22 +52,66 @@ class HomeWidget extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    TextField(
-                      decoration: InputDecoration(
-                        suffixIcon: Icon(Icons.check, color: Colors.grey),
-                        label: Text('Логин', style: TextStyle(
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('it',
+                        style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),),
+                          fontSize: 40,
+                        ),
+                        ),
+                        Text('TNG',
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 40,
+                          color: Colors.deepPurpleAccent,
+                        ),
+                        ),
+                      ],
+                    ),
+                    Text(
+                      'Система складского учёта для IT-отделов',
+                      style: TextStyle(
+                        color: Colors.grey,
                       ),
                     ),
-                    TextField(
-                      decoration: InputDecoration(
-                        suffixIcon: Icon(Icons.visibility_off, color: Colors.grey),
-                        label: Text('Пароль', style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),),
+                    SizedBox(height: 30,),
+                    Container(
+                      width: 300,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                        BorderRadius.circular(10),
+                        color: Color.fromARGB(255, 230, 230, 230),
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          suffixIcon: Icon(Icons.check, color: Colors.grey),
+                          label: Text('Логин', style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 30,),
+                    Container(
+                      width: 300,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                        BorderRadius.circular(10),
+                        color: Color.fromARGB(255, 230, 230, 230),
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          suffixIcon: Icon(Icons.visibility_off, color: Colors.grey),
+                          label: Text('Пароль', style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),),
+                        ),
                       ),
                     ),
                     SizedBox(height: 10,),
@@ -83,7 +127,7 @@ class HomeWidget extends StatelessWidget {
                       height: 60,
                       width: 300,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(10),
                         gradient: LinearGradient(
                           colors: [
                             Color.fromARGB(193, 78, 7, 255), 
