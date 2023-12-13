@@ -5,6 +5,11 @@ class StoryWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Container(
+        height: MediaQuery.of(context).size.height * 1,
+        width: double.infinity,
+      ),
+    );
   }
 }
