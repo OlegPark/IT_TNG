@@ -11,7 +11,7 @@ class AuthScreen extends StatelessWidget {
           Container(
             height: double.infinity,
             width: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("assets/images/1BG.png"),
                 alignment: Alignment.topCenter
@@ -24,8 +24,7 @@ class AuthScreen extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 200.0),
+          Center(
             child: Container(
               margin: EdgeInsets.all(22),
               decoration: BoxDecoration(
