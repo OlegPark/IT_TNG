@@ -26,8 +26,8 @@ class AuthScreen extends StatelessWidget {
           ),
           Center(
             child: Container(
-              margin: EdgeInsets.all(22),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.all(22),
+              decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40),
                   topRight: Radius.circular(40),
@@ -47,7 +47,7 @@ class AuthScreen extends StatelessWidget {
               height: 450,
               width: 350,
               child: Padding(
-                padding: EdgeInsets.only(left: 28.0, right: 28.0),
+                padding: const EdgeInsets.only(left: 28.0, right: 28.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -70,7 +70,13 @@ class AuthScreen extends StatelessWidget {
                       ],
                     ),
                     Text(
-                      'Система складского учёта для IT-отделов',
+                      'Система складского учёта для',
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Text(
+                      'IT-отделов',
                       style: TextStyle(
                         color: Colors.grey,
                       ),
