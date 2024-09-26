@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/wigets.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({super.key});
@@ -51,37 +52,20 @@ class AuthScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text('it',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 40,
-                        ),
-                        ),
-                        Text('TNG',
-                        style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: 40,
-                          color: Colors.deepPurpleAccent,
-                        ),
-                        ),
-                      ],
-                    ),
-                    Text(
+                    const TitleAuth(),
+                    const Text(
                       'Система складского учёта для',
                       style: TextStyle(
                         color: Colors.grey,
                       ),
                     ),
-                    Text(
+                    const Text(
                       'IT-отделов',
                       style: TextStyle(
                         color: Colors.grey,
                       ),
                     ),
-                    SizedBox(height: 30,),
+                    const SizedBox(height: 30,),
                     Container(
                       width: 300,
                       height: 50,
@@ -100,7 +84,7 @@ class AuthScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 30,),
+                    const SizedBox(height: 30,),
                     Container(
                       width: 300,
                       height: 50,
@@ -156,3 +140,4 @@ class AuthScreen extends StatelessWidget {
     );
   }
 }
+
