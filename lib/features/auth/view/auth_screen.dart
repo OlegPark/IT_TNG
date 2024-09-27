@@ -66,41 +66,17 @@ class AuthScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 30,),
-                    Container(
-                      width: 300,
-                      height: 50,
-                      decoration: BoxDecoration(
-                        borderRadius:
-                        BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 230, 230, 230),
-                      ),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          suffixIcon: Icon(Icons.check, color: Colors.grey),
-                          label: Text('Логин', style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black,
-                          ),),
-                        ),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        hintText: 'Введите логин',
+                        border: OutlineInputBorder()
                       ),
                     ),
                     const SizedBox(height: 30,),
-                    Container(
-                      width: 300,
-                      height: 50,
-                      decoration: BoxDecoration(
-                        borderRadius:
-                        BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 230, 230, 230),
-                      ),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          suffixIcon: Icon(Icons.visibility_off, color: Colors.grey),
-                          label: Text('Пароль', style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black,
-                          ),),
-                        ),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        hintText: 'Введите пароль',
+                        border: OutlineInputBorder()
                       ),
                     ),
                     SizedBox(height: 10,),
