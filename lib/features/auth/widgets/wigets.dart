@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:it_tng/UI/theme/theme.dart';
 
 class TitleAuth extends StatelessWidget {
   const TitleAuth({
@@ -39,13 +40,8 @@ class ButtonLogin extends StatelessWidget {
       height: 60,
       width: 300,
       decoration: BoxDecoration(
+        color: blueButtonColor,
         borderRadius: BorderRadius.circular(10),
-        gradient: LinearGradient(
-          colors: [
-            Color.fromARGB(193, 78, 7, 255), 
-            Color.fromARGB(255, 0, 87, 201),
-          ],
-        ),
       ),
       child: Center(child: Text('Войти', style: TextStyle(
         fontWeight: FontWeight.bold,
@@ -64,8 +60,9 @@ class FormPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      decoration: InputDecoration(
-        hintText: 'Введите пароль',
+      decoration: const InputDecoration(
+        hintText: 'Введите пароль' ,
+        hintStyle: TextStyle(color: Colors.grey),
         border: OutlineInputBorder()
       ),
     );
@@ -82,6 +79,7 @@ class FormLogin extends StatelessWidget {
     return TextFormField(
       decoration: InputDecoration(
         hintText: 'Введите логин',
+        hintStyle: TextStyle(color: Colors.grey),
         border: OutlineInputBorder()
       ),
     );

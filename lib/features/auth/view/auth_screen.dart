@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:it_tng/UI/theme/theme.dart';
 import '../widgets/wigets.dart';
 
 class AuthScreen extends StatelessWidget {
@@ -6,7 +7,7 @@ class AuthScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
+    return Scaffold(
       body: Stack(
         children: [
           Container(
@@ -14,13 +15,12 @@ class AuthScreen extends StatelessWidget {
             width: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/images/1BG.png"),
-                alignment: Alignment.topCenter
-              ),
+                  image: AssetImage("assets/images/1BG.png"),
+                  alignment: Alignment.topCenter),
               gradient: LinearGradient(
                 colors: [
-                  Color.fromARGB(255, 255, 255, 255),
-                  Color.fromARGB(255, 0, 87, 201),
+                  Colors.white,
+                  blueColor,
                 ],
               ),
             ),
@@ -28,15 +28,10 @@ class AuthScreen extends StatelessWidget {
           Center(
             child: Container(
               margin: const EdgeInsets.all(22),
-              decoration: const BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(40),
-                  topRight: Radius.circular(40),
-                  bottomLeft: Radius.circular(40),
-                  bottomRight: Radius.circular(40),
-                ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
                 color: Colors.white,
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Colors.grey,
                     offset: Offset(0.5, 0.5),
@@ -65,12 +60,44 @@ class AuthScreen extends StatelessWidget {
                         color: Colors.grey,
                       ),
                     ),
-                    SizedBox(height: 30,),
+                    SizedBox(
+                      height: 25,
+                    ),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        'Логин',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
                     FormLogin(),
-                    SizedBox(height: 30,),
+                    SizedBox(
+                      height: 25,
+                    ),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        'Пароль',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
                     FormPassword(),
-                    SizedBox(height: 10,),
-                    SizedBox(height: 50,),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
                     ButtonLogin(),
                   ],
                 ),
