@@ -78,7 +78,7 @@ class FormLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         hintText: 'Введите логин',
         hintStyle: TextStyle(color: Colors.grey),
         border: OutlineInputBorder(),
