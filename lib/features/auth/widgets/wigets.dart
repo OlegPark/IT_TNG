@@ -63,7 +63,8 @@ class FormPassword extends StatelessWidget {
       decoration: const InputDecoration(
         hintText: 'Введите пароль' ,
         hintStyle: TextStyle(color: Colors.grey),
-        border: OutlineInputBorder()
+        border: OutlineInputBorder(),
+        contentPadding: EdgeInsets.all(10),
       ),
     );
   }
@@ -80,7 +81,8 @@ class FormLogin extends StatelessWidget {
       decoration: InputDecoration(
         hintText: 'Введите логин',
         hintStyle: TextStyle(color: Colors.grey),
-        border: OutlineInputBorder()
+        border: OutlineInputBorder(),
+        contentPadding: EdgeInsets.all(10),
       ),
     );
   }
