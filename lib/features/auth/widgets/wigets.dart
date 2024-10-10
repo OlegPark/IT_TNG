@@ -52,24 +52,6 @@ class ButtonLogin extends StatelessWidget {
   }
 }
 
-class FormPassword extends StatelessWidget {
-  const FormPassword({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return TextFormField(
-      decoration: const InputDecoration(
-        hintText: 'Введите пароль' ,
-        hintStyle: TextStyle(color: Colors.grey),
-        border: OutlineInputBorder(),
-        contentPadding: EdgeInsets.all(10),
-      ),
-    );
-  }
-}
-
 class FormLogin extends StatelessWidget {
   const FormLogin({
     super.key,
@@ -80,6 +62,25 @@ class FormLogin extends StatelessWidget {
     return TextFormField(
       decoration: const InputDecoration(
         hintText: 'Введите логин',
+        hintStyle: TextStyle(color: Colors.grey),
+        border: OutlineInputBorder(),
+        contentPadding: EdgeInsets.all(10),
+      ),
+    );
+  }
+}
+
+class FormPassword extends StatelessWidget {
+  const FormPassword({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      obscureText: true,
+      decoration: const InputDecoration(
+        hintText: 'Введите пароль' ,
         hintStyle: TextStyle(color: Colors.grey),
         border: OutlineInputBorder(),
         contentPadding: EdgeInsets.all(10),
