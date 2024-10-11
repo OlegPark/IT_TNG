@@ -80,11 +80,29 @@ class FormPassword extends StatelessWidget {
     return TextFormField(
       obscureText: true,
       decoration: const InputDecoration(
-        hintText: 'Введите пароль' ,
+        hintText: 'Введите пароль',
         hintStyle: TextStyle(color: Colors.grey),
         border: OutlineInputBorder(),
         contentPadding: EdgeInsets.all(10),
       ),
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return 'Пароль не может быть пустым';
+        }
+        if (value.length < 8) {
+          return 'Пароль должен быть не менее 8 символов';
+        }
+        if (!value.contains(RegExp(r'[A-Z]'))) {
+          return 'Пароль должен содержать хотя бы одну заглавную букву';
+        }
+        if (!value.contains(RegExp(r'[a-z]'))) {
+          return 'Пароль должен содержать хотя бы одну строчную букву';
+        }
+        if (!value.contains(RegExp(r'[0-9]'))) {
+          return 'Пароль должен содержать хотя бы одну цифру';
+        }
+        return null; 
+      },
     );
   }
 }
