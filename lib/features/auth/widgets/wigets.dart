@@ -21,7 +21,7 @@ class TitleAuth extends StatelessWidget {
         style: TextStyle(
           fontWeight: FontWeight.normal,
           fontSize: 40,
-          color: Colors.deepPurpleAccent,
+          color: blueButtonColor,
         ),
         ),
       ],
