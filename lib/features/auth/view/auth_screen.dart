@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:it_tng/UI/theme/theme.dart';
+import '../../../generated/l10n.dart';
 import '../widgets/wigets.dart';
 
 class AuthScreen extends StatelessWidget {
@@ -42,14 +43,18 @@ class AuthScreen extends StatelessWidget {
               ),
               height: 450,
               width: 350,
-              child: const Padding(
-                padding: EdgeInsets.only(left: 28.0, right: 28.0),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 28.0, right: 28.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     TitleAuth(),
                     Text(
-                      'Система складского учёта для',
+                      S.of(context).hello,
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                    Text(
+                      'Система складского учёта для', //нужно доделать это и настроить генерацию для новых слов 
                       style: TextStyle(
                         color: Colors.grey,
                       ),
