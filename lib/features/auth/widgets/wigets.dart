@@ -43,7 +43,7 @@ class ButtonLogin extends StatelessWidget {
         color: blueButtonColor,
         borderRadius: BorderRadius.circular(10),
       ),
-      child: Center(child: Text('Войти', style: TextStyle(
+      child: const Center(child: Text('Войти', style: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 20,
         color: Colors.white,
