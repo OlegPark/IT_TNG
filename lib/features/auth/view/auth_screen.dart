@@ -53,13 +53,13 @@ class AuthScreen extends StatelessWidget {
                       S.of(context).hello,
                       style: TextStyle(color: Colors.grey),
                     ),
-                    Text(
+                    const Text(
                       'Система складского учёта для', //нужно доделать это и настроить генерацию для новых слов 
                       style: TextStyle(
                         color: Colors.grey,
                       ),
                     ),
-                    Text(
+                    const Text(
                       'IT-отделов',
                       style: TextStyle(
                         color: Colors.grey,
