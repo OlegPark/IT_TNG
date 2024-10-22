@@ -48,7 +48,7 @@ class AuthScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    TitleAuth(),
+                    const TitleAuth(),
                     Text(
                       S.of(context).hello,
                       style: TextStyle(color: Colors.grey),
