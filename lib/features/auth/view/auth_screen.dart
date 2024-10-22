@@ -51,7 +51,7 @@ class AuthScreen extends StatelessWidget {
                     const TitleAuth(),
                     Text(
                       S.of(context).hello,
-                      style: TextStyle(color: Colors.grey),
+                      style: const TextStyle(color: Colors.grey),
                     ),
                     const Text(
                       'Система складского учёта для', //нужно доделать это и настроить генерацию для новых слов 
@@ -65,10 +65,10 @@ class AuthScreen extends StatelessWidget {
                         color: Colors.grey,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
-                    Align(
+                    const Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
                         'Логин',
