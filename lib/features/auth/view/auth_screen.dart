@@ -81,7 +81,7 @@ class AuthScreen extends StatelessWidget {
                       height: 5,
                     ),
                     const FormLogin(),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
                     Align(
