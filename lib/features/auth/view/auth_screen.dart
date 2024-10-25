@@ -84,7 +84,7 @@ class AuthScreen extends StatelessWidget {
                     const SizedBox(
                       height: 25,
                     ),
-                    Align(
+                    const Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
                         'Пароль',
