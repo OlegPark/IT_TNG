@@ -93,14 +93,14 @@ class AuthScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
-                    FormPassword(),
-                    SizedBox(
+                    const FormPassword(),
+                    const SizedBox(
                       height: 30,
                     ),
-                    ButtonLogin(),
+                    const ButtonLogin(),
                   ],
                 ),
               ),
