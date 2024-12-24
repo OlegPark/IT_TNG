@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:it_tng/UI/theme/theme.dart';
-import '../../../generated/l10n.dart';
 import '../widgets/wigets.dart';
 
 class AuthScreen extends StatelessWidget {
@@ -43,32 +42,28 @@ class AuthScreen extends StatelessWidget {
               ),
               height: 450,
               width: 350,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 28.0, right: 28.0),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 28.0, right: 28.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const TitleAuth(),
+                    TitleAuth(),
                     Text(
-                      S.of(context).hello,
-                      style: const TextStyle(color: Colors.grey),
-                    ),
-                    const Text(
                       'Система складского учёта для', //нужно доделать это и настроить генерацию для новых слов 
                       style: TextStyle(
                         color: Colors.grey,
                       ),
                     ),
-                    const Text(
+                    Text(
                       'IT-отделов',
                       style: TextStyle(
                         color: Colors.grey,
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 25,
                     ),
-                    const Align(
+                    Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
                         'Логин',
@@ -77,14 +72,14 @@ class AuthScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 5,
                     ),
-                    const FormLogin(),
-                    const SizedBox(
+                    FormLogin(),
+                    SizedBox(
                       height: 25,
                     ),
-                    const Align(
+                    Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
                         'Пароль',
@@ -93,14 +88,14 @@ class AuthScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 5,
                     ),
-                    const FormPassword(),
-                    const SizedBox(
+                    FormPassword(),
+                    SizedBox(
                       height: 30,
                     ),
-                    const ButtonLogin(),
+                    ButtonLogin(),
                   ],
                 ),
               ),
