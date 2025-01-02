@@ -10,13 +10,21 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      appBar: AppBar(title: Text('Главное мени всех виджетов с виджетами'),),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(''
+            Text('тут будут виджеты'
             ),
-            
+            Container(
+              height: 50,
+              width: 200,
+              color: Colors.blue,
+              child: Center(child: Text('Авторизация >')),
+            )
           ],
         ),
       ),
