@@ -24,7 +24,8 @@ class HomeScreen extends StatelessWidget {
               width: 200,
               color: Colors.blue,
               child: Center(child: Text('Авторизация >')),
-            )
+            ),
+            Divider(),
           ],
         ),
       ),
