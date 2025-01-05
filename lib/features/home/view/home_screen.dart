@@ -26,6 +26,15 @@ class HomeScreen extends StatelessWidget {
               child: Center(child: Text('Авторизация >')),
             ),
             Divider(),
+            Text('тут будут виджеты'
+            ),
+            Container(
+              height: 50,
+              width: 200,
+              color: Colors.blue,
+              child: Center(child: Text('Вертикальный степпер >')),
+            ),
+            Divider(),
           ],
         ),
       ),
