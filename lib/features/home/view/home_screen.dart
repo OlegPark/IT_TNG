@@ -19,34 +19,42 @@ class HomeScreen extends StatelessWidget {
           children: [
             Text('тут будут виджеты'
             ),
-            Container(
-              height: 50,
-              width: 200,
-              color: Colors.blue,
-              child: Center(child: Text('Авторизация >')),
+            GestureDetector(
+              child: Container(
+                height: 50,
+                width: 200,
+                color: Colors.blue,
+                child: Center(child: Text('Авторизация >')),
+              ),
             ),
             Divider(),
             Text('тут будут виджеты'
             ),
-            Container(
-              height: 50,
-              width: 200,
-              color: Colors.blue,
-              child: Center(child: Text('Вертикальный степпер >')),
+            GestureDetector(
+              child: Container(
+                height: 50,
+                width: 200,
+                color: Colors.blue,
+                child: Center(child: Text('Вертикальный степпер >')),
+              ),
             ),
             Divider(),
-            Container(
-              height: 50,
-              width: 200,
-              color: Colors.blue,
-              child: Center(child: Text('Вертикальный степпер >')),
+            GestureDetector(
+              child: Container(
+                height: 50,
+                width: 200,
+                color: Colors.blue,
+                child: Center(child: Text('Вертикальный степпер >')),
+              ),
             ),
             Divider(),
-            Container(
-              height: 50,
-              width: 200,
-              color: Colors.blue,
-              child: Center(child: Text('Вертикальный степпер >')),
+            RawGestureDetector(
+              child: Container(
+                height: 50,
+                width: 200,
+                color: Colors.blue,
+                child: Center(child: Text('Вертикальный степпер >')),
+              ),
             ),
             Divider(),
           ],
