@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Divider(),
-            RawGestureDetector(
+            GestureDetector(
               child: Container(
                 height: 50,
                 width: 200,
