@@ -46,12 +46,12 @@ class _TimerPageState extends State<TimerPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Прошло секунд:',
+              'Отдых',
               style: TextStyle(fontSize: 24),
             ),
             Text(
               '$_seconds',
-              style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold, color: Colors.blue),
             ),
             SizedBox(height: 20),
             Row(
