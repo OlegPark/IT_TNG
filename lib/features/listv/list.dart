@@ -7,10 +7,10 @@ class Example03ShopItem extends StatefulWidget {
   const Example03ShopItem({required this.index, super.key});
 
   @override
-  State<Example03ShopItem> createState() => Example03ShopItemState();
+  State<Example03ShopItem> createState() => _Example03ShopItemState();
 }
 
-class Example03ShopItemState extends State<Example03ShopItem> {
+class _Example03ShopItemState extends State<Example03ShopItem> {
   // with AutomaticKeepAliveClientMixin {
   bool checked = false;
 
