@@ -62,8 +62,8 @@ class Example03ListViewBuilder extends StatelessWidget {
     //   separatorBuilder:
     //       (context, i) =>
     //       SizedBox(height: 2, child: ColoredBox(color: Colors.green)),
-    // addRepaintBoundaries: false,
-    // addAutomaticKeepAlives: true,
+    addRepaintBoundaries: false,
+    addAutomaticKeepAlives: true,
     itemCount: 100,
     itemBuilder: (context, i) {
       print('Building $i');
